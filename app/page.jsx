@@ -10,7 +10,7 @@ function page() {
       className={styles.body}
       style={{
         background:
-          'linear-gradient(rgba(0, 1, 3, 0.5), rgba(0, 0, 0, 0.7)), url(images/fondoServicios.jpg)',
+          'linear-gradient(rgba(0, 1, 3, 0.5), rgba(0, 0, 0, 0.7)), url(images/fondoservicios.jpg)',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
