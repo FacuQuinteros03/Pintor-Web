@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+.galeria {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #0d2033;
+  height: 100vh;
+}
+.title {
+  color: #0075ff;
+  font-family: 'Space Grotesk';
+  font-size: 60px;
+  text-align: center;
+  margin: 100px 0 50px 0;
+  font-weight: 500;
+}
+.linea {
+  border-top: 5px solid #0077c0;
+}
+.contenedorImagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.contenedorImagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 3px 0px rgba(27, 27, 27, 0.75);
+}
+.imagen .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 131, 192, 0.486);
+  width: 100%;
+  height: 0;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  overflow: hidden;
+}
+.overlay h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .contenedorImagenes {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenedorImagenes {
+    width: 90%;
+  }
+  .contenedorImagenes .imagen {
+    width: 48%;
+  }
+  .galeria {
+    height: 165vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 44px;
+  }
+  .contenedorImagenes {
+    width: 98%;
+  }
+  .contenedorImagenes .imagen {
+    width: 80%;
+  }
+  .galeria {
+    height: 270vh;
+  }
+}

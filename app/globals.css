@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d2033;
+}
+
+.contenedor-header {
+  background: radial-gradient(
+    circle,
+    rgba(13, 32, 51, 1) 54%,
+    rgba(10, 20, 29, 1) 100%
+  );
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header .redes a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  padding-left: 15px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.contenedor-header .redes a:hover {
+  color: #0075ff;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 25px;
+}
+.contenedor-header header .logo a {
+  font-size: 36px;
+  color: #0075ff;
+  text-decoration: none;
+}
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+  color: #0075ff;
+}
+.nav-responsive {
+  background-color: #0075ff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .nav-responsive {
+    display: block;
+  }
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background: radial-gradient(
+      circle,
+      rgba(13, 32, 51, 1) 54%,
+      rgba(10, 20, 29, 1) 100%
+    );
+    width: 180px;
+  }
+  .contenedor-header .redes {
+    display: none;
+  }
+  nav.responsive ul {
+    display: block !important;
+  }
+  nav.responsive ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contenedor-header header .logo a {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .contenedor-header header .logo a {
+    font-size: 20px;
+  }
+}

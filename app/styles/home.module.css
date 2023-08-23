@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  height: 100vh;
+}
+
+.contenedorTitle {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  background: #ccc;
+  background: linear-gradient(90deg, #9500ff, #00ddff);
+  font-family: system-ui;
+  font-size: 5rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  padding-top: 15px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.opciones {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.opciones .opcion {
+  border-top: 2px solid #fff;
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+.opciones .opcion:hover {
+  cursor: pointer;
+  color: #00ddff;
+  border-top: 2px solid #00ddff;
+}
+@media screen and (max-width: 750px) {
+  .title {
+    font-size: 4.2rem;
+  }
+  .opciones {
+    flex-flow: column wrap;
+  }
+  .opciones .opcion {
+    border-top: 1px solid #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 3rem;
+  }
+}
