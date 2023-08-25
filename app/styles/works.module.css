@@ -60,7 +60,6 @@
 }
 .imagen:hover .overlay {
   height: 100%;
-  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
   .contenedorImagenes {

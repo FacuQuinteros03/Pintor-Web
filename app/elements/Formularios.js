@@ -183,6 +183,12 @@ const MensajeExito = styled.div`
   p {
     margin: 0;
   }
+
+  @media (max-width: 480px) {
+    line-height: 25px;
+    text-align: center;
+    padding: 2px;
+  }
 `;
 
 const MensajeError = styled.div`
@@ -195,6 +201,19 @@ const MensajeError = styled.div`
   margin-left: 20px;
   p {
     margin: 0;
+  }
+
+  @media (max-width: 800px) {
+    grid-column: 1/2;
+  }
+
+  @media (max-width: 600px) {
+    line-height: 25px;
+    text-align: center;
+  }
+
+  @media (max-width: 350px) {
+    line-height: 15px;
   }
 `;
 

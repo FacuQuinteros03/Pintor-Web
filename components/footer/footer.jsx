@@ -20,8 +20,8 @@ function Footer() {
           <h2>Sobre nosotros</h2>
           <p>
             Ofrecemos todos los servicios para tu hogar, con mas de 20 años de
-            experiencia realizando pinturas,albañileria,carteleria,carpinteria y
-            soldaduras
+            experiencia realizando pinturas, albañileria, carteleria,
+            carpinteria y soldaduras
           </p>
           <p>Contactanos para un presupuesto sin cargo</p>
         </div>
