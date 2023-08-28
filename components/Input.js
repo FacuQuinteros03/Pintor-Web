@@ -19,6 +19,7 @@ const ComponenteInput = ({
   label,
   placeholder,
   name,
+  nombre,
   leyendaError,
   expresionRegular,
 }) => {
@@ -46,6 +47,7 @@ const ComponenteInput = ({
           type={tipo}
           placeholder={placeholder}
           id={name}
+          name={nombre}
           value={estado.campo}
           onChange={onChange}
           onKeyUp={validacion}

@@ -1,5 +1,6 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from '../../app/styles/contact.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -49,6 +50,40 @@ const Formulario = () => {
     }
   };
 
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (
+      nombre.valido === 'true' &&
+      email.valido === 'true' &&
+      telefono.valido === 'true' &&
+      tema.valido === 'true'
+    ) {
+      cambiarFormularioValido(true);
+      cambiarNombre({ campo: '', valido: null });
+      cambiarEmail({ campo: '', valido: null });
+      cambiarTelefono({ campo: '', valido: null });
+      cambiarTema({ campo: '', valido: null });
+      emailjs
+        .sendForm(
+          'service_08d4v7s',
+          'template_t385xds',
+          form.current,
+          'biFUJZ3BMpG3TK6bm'
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    } else {
+      cambiarFormularioValido(false);
+    }
+  };
+
   return (
     <section
       style={{
@@ -60,7 +95,7 @@ const Formulario = () => {
     >
       <Contenedor>
         <h2 className={styles.titulo}>Contacto</h2>
-        <Formul action="" onSubmit={onSubmit}>
+        <Formul action="" ref={form} onSubmit={sendEmail}>
           <Input
             estado={nombre}
             cambiarEstado={cambiarNombre}
@@ -68,6 +103,7 @@ const Formulario = () => {
             label="Nombre"
             placeholder="Jorge Ruiz"
             name="user_name"
+            nombre="user_name"
             leyendaError="El nombre solo puede contener letras y espacios y no puede estar vacio"
             expresionRegular={expresiones.nombre}
           />
@@ -79,6 +115,7 @@ const Formulario = () => {
             label="Correo electronico"
             placeholder="correo@correo.com"
             name="user_email"
+            nombre="user_email"
             leyendaError="Por favor ingrese un correo valido"
             expresionRegular={expresiones.email}
           />
@@ -90,6 +127,7 @@ const Formulario = () => {
             label="Telefono"
             placeholder="3416178592"
             name="telefono"
+            nombre="telefono"
             leyendaError="El telefono debe contener de 7 a 14 números"
             expresionRegular={expresiones.telefono}
           />
@@ -101,6 +139,7 @@ const Formulario = () => {
             label="Tema"
             placeholder="Ingresa tu consulta"
             name="message"
+            nombre="message"
             leyendaError="El tema no puede estar vacio"
             expresionRegular={expresiones.tema}
           />
@@ -113,8 +152,9 @@ const Formulario = () => {
               </p>
             </MensajeError>
           )}
+
           <ContenedorBoton>
-            <Boton type="submit">
+            <Boton type="submit" value="Send">
               <Span>ENVIAR</Span>
             </Boton>
 
