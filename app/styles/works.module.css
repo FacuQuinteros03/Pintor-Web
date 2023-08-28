@@ -3,7 +3,7 @@
 .galeria {
   font-family: 'Space Grotesk', sans-serif;
   background-color: #0d2033;
-  height: 100vh;
+  min-height: 100vh;
 }
 .title {
   color: #0075ff;
