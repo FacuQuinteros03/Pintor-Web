@@ -71,7 +71,7 @@ function works() {
 
           <div className={styles.imagen}>
             <Image
-              src={'/images/paredUno.jpg'}
+              src={'/images/pareduno.jpg'}
               width={400}
               height={300}
               className={styles.img}
