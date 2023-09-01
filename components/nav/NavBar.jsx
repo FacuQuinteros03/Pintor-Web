@@ -60,11 +60,13 @@ export default function NavBar() {
         <div className="redes">
           <a
             href="https://www.facebook.com/profile.php?id=100088905354668&mibextid=D4KYlr"
+            target="_blank"
             className="fa-brands fa-square-facebook"
           ></a>
-          <a href="#" className="fa-brands fa-instagram"></a>
+          <a href="#" className="fa-brands fa-instagram" target="_blank"></a>
           <a
             href="https://wa.link/t7h5y1"
+            target="_blank"
             className="fa-brands fa-whatsapp"
           ></a>
         </div>

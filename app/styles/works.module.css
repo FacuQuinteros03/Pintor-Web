@@ -74,7 +74,7 @@
     width: 48%;
   }
   .galeria {
-    height: 165vh;
+    min-height: 165vh;
   }
 }
 @media screen and (max-width: 450px) {
@@ -88,6 +88,6 @@
     width: 80%;
   }
   .galeria {
-    height: 270vh;
+    min-height: 270vh;
   }
 }

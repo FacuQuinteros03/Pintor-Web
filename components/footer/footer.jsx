@@ -30,10 +30,15 @@ function Footer() {
           <div className={style.redSocial}>
             <a
               href="https://www.facebook.com/profile.php?id=100088905354668&mibextid=D4KYlr"
+              target="_blank"
               class="fa-brands fa-facebook"
             ></a>
-            <a href="#" class="fa-brands fa-instagram"></a>
-            <a href="https://wa.link/t7h5y1" class="fa-brands fa-whatsapp"></a>
+            <a href="#" class="fa-brands fa-instagram" target="_blank"></a>
+            <a
+              href="https://wa.link/t7h5y1"
+              class="fa-brands fa-whatsapp"
+              target="_blank"
+            ></a>
           </div>
         </div>
       </div>
@@ -44,6 +49,7 @@ function Footer() {
           Desarrollado por{' '}
           <a
             href="https://www.linkedin.com/in/facundo-quinteros-125051232"
+            target="_blank"
             className={style.link}
           >
             Facundo Quinteros
@@ -51,6 +57,7 @@ function Footer() {
           y{' '}
           <a
             href="https://www.linkedin.com/in/lautaro-tomas-lucero-3326b5227"
+            target="_blank"
             className={style.link}
           >
             Lautaro Lucero

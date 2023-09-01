@@ -65,7 +65,7 @@ function works() {
               className={styles.img}
             />
             <div className={styles.overlay}>
-              <h2>Pintura</h2>
+              <h2>Pintura pared de verduleria</h2>
             </div>
           </div>
 
@@ -107,13 +107,85 @@ function works() {
 
           <div className={styles.imagen}>
             <Image
-              src={'/images/barberia.jpg'}
+              src={'/images/anchorena.jpg'}
               width={400}
               height={300}
               className={styles.img}
             />
             <div className={styles.overlay}>
-              <h2>Pintura para "Rory's Barbers"</h2>
+              <h2>Pintura para taller mecanico</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/camion.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Publicidad de camión de mudanzas"</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/dubai.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Dubai motors, auxilios y traslados</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/fotografia.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Fotografia infantil "Vanesa Martinez"</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/yamaha.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Pintura casa de repuestos</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/kawasaki.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Pintura kawasaki</h2>
+            </div>
+          </div>
+
+          <div className={styles.imagen}>
+            <Image
+              src={'/images/secco.jpg'}
+              width={400}
+              height={300}
+              className={styles.img}
+            />
+            <div className={styles.overlay}>
+              <h2>Pintura container Secco</h2>
             </div>
           </div>
         </div>
