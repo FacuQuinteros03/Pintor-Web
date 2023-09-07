@@ -90,7 +90,7 @@ const Formulario = () => {
         backgroundImage: 'url("/images/pintura.jpg")',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        height: '100vh',
+        height: '120vh',
       }}
     >
       <Contenedor>

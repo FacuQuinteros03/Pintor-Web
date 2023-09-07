@@ -1,0 +1,36 @@
+[33mcommit 009f2fecda23cb899f7173d5f54541bf83180442[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d88c4a9 4a36e43
+Author: Lauty1904 <lautaro.lucero6b@gmail.com>
+Date:   Mon Aug 28 16:08:02 2023 -0300
+
+    Merge branch 'main' of https://github.com/FacuQuinteros03/Pintor-Web
+
+[33mcommit d88c4a927222ebb4f30d5493567ddd5daa5065bb[m
+Author: Lauty1904 <lautaro.lucero6b@gmail.com>
+Date:   Mon Aug 28 16:07:46 2023 -0300
+
+    arreglos home, works
+
+[33mcommit 4a36e43447c60f6837257304eacc88e751b10132[m
+Author: FacuQuinteros03 <facuquinterosrc@hotmail.com>
+Date:   Fri Aug 25 17:04:50 2023 -0300
+
+    Form Funcionando
+
+[33mcommit 0a7c2a5214724519196e2a9284ba61fe36d1785b[m[33m ([m[1;31morigin/developer[m[33m, [m[1;32mdeveloper[m[33m)[m
+Author: FacuQuinteros03 <facuquinterosrc@hotmail.com>
+Date:   Wed Aug 23 16:42:08 2023 -0300
+
+    Imagen
+
+[33mcommit e5c532eda2b1a7876f3e3b4f0c7c2b293f681fd9[m
+Author: FacuQuinteros03 <facuquinterosrc@hotmail.com>
+Date:   Wed Aug 23 16:28:51 2023 -0300
+
+    cambios
+
+[33mcommit fda5db4d2749b90c51bb2cd2e1f19f4925573da9[m
+Author: FacuQuinteros03 <facuquinterosrc@hotmail.com>
+Date:   Wed Aug 23 16:27:58 2023 -0300
+
+    first commit

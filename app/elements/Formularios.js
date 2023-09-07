@@ -32,6 +32,11 @@ const Contenedor = styled.div`
   @media (max-width: 1100px) {
     width: 80%;
   }
+  @media (max-width: 600px) {
+    width: 80%;
+    padding-top: 50px;
+    margin-top:50px;
+  }
 `;
 
 const ContenedorLabel = styled.div`
@@ -160,6 +165,11 @@ const Boton = styled.button`
   }
   &:active {
     transform: scale(0.9);
+  }
+  @media (max-width: 480px) {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 2.5px
   }
 `;
 
