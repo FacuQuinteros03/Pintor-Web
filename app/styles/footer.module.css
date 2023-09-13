@@ -63,11 +63,11 @@
 }
 .link {
   text-decoration: none;
-  color: #fff;
+  color: #00ddff;
   transition: 0.5s;
 }
 .link:hover {
-  color: #00ddff;
+  color: #0075ff;
 }
 
 @media screen and (max-width: 800px) {

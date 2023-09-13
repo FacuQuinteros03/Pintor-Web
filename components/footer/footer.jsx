@@ -12,6 +12,7 @@ function Footer() {
                 src={'/images/loguiti.png'}
                 width={765 / 3.5}
                 height={622 / 3.5}
+                alt="logo"
               />
             </a>
           </figure>
@@ -31,12 +32,16 @@ function Footer() {
             <a
               href="https://www.facebook.com/profile.php?id=100088905354668&mibextid=D4KYlr"
               target="_blank"
-              class="fa-brands fa-facebook"
+              className="fa-brands fa-facebook"
             ></a>
-            <a href="#" class="fa-brands fa-instagram" target="_blank"></a>
+            <a
+              href="https://www.instagram.com/cristiancz.pintura/"
+              className="fa-brands fa-instagram"
+              target="_blank"
+            ></a>
             <a
               href="https://wa.link/t7h5y1"
-              class="fa-brands fa-whatsapp"
+              className="fa-brands fa-whatsapp"
               target="_blank"
             ></a>
           </div>

@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <div className="contenedor-header">
       <header>
-        <Image src={'/images/loguiti.png'} width={50} height={40} />
+        <Image src={'/images/loguiti.png'} alt="logo" width={50} height={40} />
         <div className="logo">
           <Link legacyBehavior href={'/'}>
             <a src="#">Cristian Zaragoza</a>
@@ -63,7 +63,11 @@ export default function NavBar() {
             target="_blank"
             className="fa-brands fa-square-facebook"
           ></a>
-          <a href="#" className="fa-brands fa-instagram" target="_blank"></a>
+          <a
+            href="https://www.instagram.com/cristiancz.pintura/"
+            className="fa-brands fa-instagram"
+            target="_blank"
+          ></a>
           <a
             href="https://wa.link/t7h5y1"
             target="_blank"

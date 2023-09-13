@@ -35,7 +35,7 @@ const Contenedor = styled.div`
   @media (max-width: 600px) {
     width: 80%;
     padding-top: 50px;
-    margin-top:50px;
+    margin-top: 50px;
   }
 `;
 
@@ -169,7 +169,7 @@ const Boton = styled.button`
   @media (max-width: 480px) {
     margin-top: 10px;
     font-size: 16px;
-    padding: 2.5px
+    padding: 2.5px;
   }
 `;
 

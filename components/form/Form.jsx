@@ -19,35 +19,17 @@ import {
 import Input from '../Input';
 
 const Formulario = () => {
-  const [nombre, cambiarNombre] = useState({ campo: '', valido: null });
-  const [email, cambiarEmail] = useState({ campo: '', valido: null });
-  const [telefono, cambiarTelefono] = useState({ campo: '', valido: null });
-  const [tema, cambiarTema] = useState({ campo: '', valido: null });
-  const [formularioValido, cambiarFormularioValido] = useState(null);
+  const [nombre, cambiarNombre] = useState({ campo: '', valido: '' });
+  const [email, cambiarEmail] = useState({ campo: '', valido: '' });
+  const [telefono, cambiarTelefono] = useState({ campo: '', valido: '' });
+  const [tema, cambiarTema] = useState({ campo: '', valido: '' });
+  const [formularioValido, cambiarFormularioValido] = useState('');
 
   const expresiones = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{7,14}$/, // 7 a 14 numeros.
     tema: /^[\w\d\sáéíóúüñÁÉÍÓÚÜÑ¡¿,!.:;()-_@#%&+={}[\]|\\/\"\'<>\$^*?]{1,300}$/, //permite todo, menos que estee vacio
-  };
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (
-      nombre.valido === 'true' &&
-      email.valido === 'true' &&
-      telefono.valido === 'true' &&
-      tema.valido === 'true'
-    ) {
-      cambiarFormularioValido(true);
-      cambiarNombre({ campo: '', valido: null });
-      cambiarEmail({ campo: '', valido: null });
-      cambiarTelefono({ campo: '', valido: null });
-      cambiarTema({ campo: '', valido: null });
-    } else {
-      cambiarFormularioValido(false);
-    }
   };
 
   const form = useRef();
@@ -66,10 +48,10 @@ const Formulario = () => {
       cambiarTema({ campo: '', valido: null });
       emailjs
         .sendForm(
-          'service_08d4v7s',
-          'template_t385xds',
+          'service_eb38jpf',
+          'template_9tgb4s9',
           form.current,
-          'biFUJZ3BMpG3TK6bm'
+          '0zjeuTUxqGa8pxpMm'
         )
         .then(
           (result) => {

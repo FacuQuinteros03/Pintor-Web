@@ -1,7 +1,5 @@
 import NavBar from '@/components/nav/NavBar';
 import Footer from '@/components/footer/footer';
-import Image from 'next/image';
-import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import { Suspense } from 'react';
@@ -25,7 +23,7 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossOrigin="anonymous"
-          referrerpolicy="no-referrer"
+          referrerPolicy="no-referrer"
         />
       </head>
       <body className={inter.className}>

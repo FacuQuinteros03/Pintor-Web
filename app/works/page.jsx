@@ -15,6 +15,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="canchita"
             />
             <div className={styles.overlay}>
               <h2>Pintura de pared en cancha de futbol "Doble 5"</h2>
@@ -27,6 +28,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="pizzeria"
             />
             <div className={styles.overlay}>
               <h2>Pintura para pizzeria "Los 3 nietos"</h2>
@@ -39,6 +41,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="barberia"
             />
             <div className={styles.overlay}>
               <h2>Pintura para porton de barberia</h2>
@@ -51,6 +54,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="paredArmus"
             />
             <div className={styles.overlay}>
               <h2>Pintura Armus Crossfit</h2>
@@ -63,6 +67,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="paredVerde"
             />
             <div className={styles.overlay}>
               <h2>Pintura pared de verduleria</h2>
@@ -75,6 +80,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="paredUno"
             />
             <div className={styles.overlay}>
               <h2>Pintura "Pared Uno"</h2>
@@ -87,6 +93,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="cartel"
             />
             <div className={styles.overlay}>
               <h2>Pintura cartel "Los Principes"</h2>
@@ -99,6 +106,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="pintando"
             />
             <div className={styles.overlay}>
               <h2>Pintura pared "Armus Crossfit"</h2>
@@ -111,6 +119,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="taller"
             />
             <div className={styles.overlay}>
               <h2>Pintura para taller mecanico</h2>
@@ -123,6 +132,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="camion"
             />
             <div className={styles.overlay}>
               <h2>Publicidad de camión de mudanzas"</h2>
@@ -135,6 +145,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="traslados"
             />
             <div className={styles.overlay}>
               <h2>Dubai motors, auxilios y traslados</h2>
@@ -147,6 +158,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="fotografia"
             />
             <div className={styles.overlay}>
               <h2>Fotografia infantil "Vanesa Martinez"</h2>
@@ -159,6 +171,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="yamaha"
             />
             <div className={styles.overlay}>
               <h2>Pintura casa de repuestos</h2>
@@ -171,6 +184,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="kawasaki"
             />
             <div className={styles.overlay}>
               <h2>Pintura kawasaki</h2>
@@ -183,6 +197,7 @@ function works() {
               width={400}
               height={300}
               className={styles.img}
+              alt="secco"
             />
             <div className={styles.overlay}>
               <h2>Pintura container Secco</h2>
