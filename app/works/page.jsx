@@ -2,6 +2,10 @@ import React from 'react';
 import styles from '../styles/works.module.css';
 import CardWorks from '@/components/CardWorks';
 
+export const metadata = {
+  title: 'Cristian Zaragoza - Trabajos',
+};
+
 function works() {
   return (
     <>

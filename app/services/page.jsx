@@ -2,6 +2,10 @@ import React from 'react';
 import style from '../styles/services.module.css';
 import ComponenteCard from '@/components/Card';
 
+export const metadata = {
+  title: 'Cristian Zaragoza - Servicios',
+};
+
 function Services() {
   return (
     <div

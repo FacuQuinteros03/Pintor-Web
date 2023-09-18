@@ -2,8 +2,6 @@ import NavBar from '@/components/nav/NavBar';
 import Footer from '@/components/footer/footer';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { Suspense } from 'react';
-import Loading from './loading';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,8 +26,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <NavBar />
-        <Suspense fallback={<Loading />}></Suspense>
         {children}
+
         <Footer />
       </body>
     </html>
