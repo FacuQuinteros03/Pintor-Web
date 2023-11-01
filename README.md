@@ -1,4 +1,4 @@
-#Page for a professional pintor "Cristian Zaragoza"
+## Page for a professional pintor "Cristian Zaragoza"
 <p>
 We use Next.js to make a visually attractive and informative page about the works of this painter. 
 On the page you will be able to see the services he offers, some of his painting work, a description at the beginning about him and you will be able to contact him through a form
