@@ -1,25 +1,25 @@
 {
-  "name": "next-app",
-  "version": "0.1.0",
+  "name": "cristian-zaragoza-web",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "npx serve out",
+    "fotos": "node scripts/optimizar-fotos.mjs"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10",
-    "formik": "^2.4.2",
-    "next": "13.4.10",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "resend": "^1.0.0",
-    "styled-components": "^6.0.5"
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "sharp": "^0.34.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
   }
 }

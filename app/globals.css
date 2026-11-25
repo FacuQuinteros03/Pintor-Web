@@ -1,118 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,500&display=swap');
-* {
-  padding: 0;
-  margin: 0;
+@import "tailwindcss";
+
+/* Paleta sacada del logo de Cristian: pincel azul, trazo verde-turquesa */
+@theme {
+  --color-pared: #f6f3ec;
+  --color-pared-2: #ece7dc;
+  --color-tinta: #0f1b2d;
+  --color-tinta-suave: #44506a;
+  --color-azul: #1f5fd0;
+  --color-celeste: #22b0e6;
+  --color-turquesa: #2bb5a0;
+  --color-lima: #a8e86b;
+  --color-whatsapp: #1fa855;
+
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-pincel: var(--font-caveat), cursive;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  background-color: #0d2033;
+  background: var(--color-pared);
+  color: var(--color-tinta);
+  -webkit-font-smoothing: antialiased;
 }
 
-.contenedor-header {
-  background: radial-gradient(
-    circle,
-    rgba(13, 32, 51, 1) 54%,
-    rgba(10, 20, 29, 1) 100%
-  );
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 99;
+::selection {
+  background: var(--color-lima);
+  color: var(--color-tinta);
 }
 
-.contenedor-header .redes a {
-  color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  padding-left: 15px;
-  margin-right: 10px;
-  transition: 0.5s;
+/* ---------- Revelado al hacer scroll ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--delay, 0ms);
 }
-.contenedor-header .redes a:hover {
-  color: #0075ff;
+[data-reveal].visible {
+  opacity: 1;
+  transform: none;
 }
-.contenedor-header header {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px 25px;
+
+/* ---------- Pincelada: un trazo que se pinta debajo de una palabra ---------- */
+.pincelada {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  white-space: nowrap;
 }
-.contenedor-header header .logo a {
-  font-size: 36px;
-  color: #0075ff;
-  text-decoration: none;
+.pincelada svg {
+  position: absolute;
+  left: -4%;
+  bottom: -0.18em;
+  width: 108%;
+  height: 0.55em;
+  z-index: -1;
+  overflow: visible;
 }
-.contenedor-header header ul {
-  display: flex;
-  list-style: none;
+.pincelada path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.6, 0.05, 0.3, 1) 0.25s;
 }
-.contenedor-header header nav ul li a {
-  text-align: none;
-  color: #fff;
-  font-size: 20px;
-  margin: 0 15px;
-  padding: 3px;
-  transition: 0.5s;
-  text-decoration: none;
+.visible .pincelada path,
+.pincelada.visible path {
+  stroke-dashoffset: 0;
 }
-.link {
-  text-decoration: none;
+
+/* ---------- Letras pintadas a mano: se revelan de izquierda a derecha ---------- */
+.letras-a-mano {
+  clip-path: inset(0 100% 0 0);
+  animation: pintar-letras 1.6s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
 }
-.contenedor-header header nav ul li a:hover {
-  color: #0075ff;
-}
-.nav-responsive {
-  background-color: #0075ff;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: none;
-}
-@media screen and (max-width: 980px) {
-  nav {
-    display: none;
-  }
-  .nav-responsive {
-    display: block;
-  }
-  nav.responsive {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    background: radial-gradient(
-      circle,
-      rgba(13, 32, 51, 1) 54%,
-      rgba(10, 20, 29, 1) 100%
-    );
-    width: 180px;
-  }
-  .contenedor-header .redes {
-    display: none;
-  }
-  nav.responsive ul {
-    display: block !important;
-  }
-  nav.responsive ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.507);
-    padding: 10px 0;
+@keyframes pintar-letras {
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
-@media screen and (max-width: 450px) {
-  .contenedor-header header .logo a {
-    font-size: 28px;
+
+/* ---------- Rodillo: la foto aparece como una pasada de pintura ---------- */
+.rodillo {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.rodillo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--rodillo, var(--color-turquesa));
+  transform-origin: right;
+  transform: scaleX(1);
+  transition: transform 0.85s cubic-bezier(0.77, 0, 0.18, 1);
+  transition-delay: calc(var(--delay, 0ms) + 150ms);
+  z-index: 2;
+}
+.rodillo img {
+  transform: scale(1.12);
+  transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--delay, 0ms) + 250ms);
+}
+.visible .rodillo::after,
+.rodillo.visible::after {
+  transform: scaleX(0);
+}
+.visible .rodillo img,
+.rodillo.visible img {
+  transform: scale(1);
+}
+
+/* ---------- Chorreado de pintura (borde inferior del hero) ---------- */
+.chorreado path {
+  transform-box: fill-box;
+  transform-origin: top;
+  transform: scaleY(0);
+  animation: chorrear 1.4s cubic-bezier(0.5, 0, 0.2, 1) forwards;
+  animation-delay: var(--delay, 1.2s);
+}
+@keyframes chorrear {
+  to {
+    transform: scaleY(1);
   }
 }
-@media screen and (max-width: 384px) {
-  .contenedor-header header .logo a {
-    font-size: 20px;
+
+/* ---------- Tarjeta de servicio: se "llena" de pintura al pasar el mouse ---------- */
+.tarjeta-pintura {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.tarjeta-pintura::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: var(--color-servicio);
+  /* borde ondulado, como pintura que sube */
+  clip-path: polygon(0 12%, 8% 6%, 18% 11%, 30% 4%, 42% 10%, 55% 3%, 67% 9%, 80% 4%, 91% 10%, 100% 5%, 100% 100%, 0 100%);
+  transform: translateY(101%);
+  transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+  z-index: -1;
+}
+.tarjeta-pintura:hover::before,
+.tarjeta-pintura:focus-within::before {
+  transform: translateY(0);
+}
+
+/* ---------- Barra de progreso tipo trazo de pincel ---------- */
+.progreso-pincel {
+  transform-origin: left;
+  transform: scaleX(var(--progreso, 0));
+}
+
+/* ---------- Botón de WhatsApp con latido suave ---------- */
+.latido::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--color-whatsapp);
+  z-index: -1;
+  animation: latido 2.4s ease-out infinite;
+}
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  70%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* ---------- Gotas de pintura flotando en el hero ---------- */
+.gota {
+  animation: flotar 6s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+@keyframes flotar {
+  50% {
+    transform: translateY(-14px) rotate(6deg);
+  }
+}
+
+/* Visor de fotos */
+dialog::backdrop {
+  background: rgb(10 16 28 / 0.92);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
   }
 }
