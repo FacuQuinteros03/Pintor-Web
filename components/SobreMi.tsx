@@ -6,7 +6,7 @@ export default function SobreMi() {
   return (
     <section id="sobre-mi" className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-2">
       <div className="relative order-2 lg:order-1">
-        <figure className="rodillo rounded-3xl" style={{ ["--rodillo" as string]: "var(--color-azul)" }}>
+        <figure className="rodillo rounded-3xl" style={{ ["--rodillo" as string]: "var(--color-bermellon)" }}>
           <Image
             src="/fotos/pareduno.webp"
             alt="Cristian pintando el mural de Espacio Uno"
@@ -18,7 +18,7 @@ export default function SobreMi() {
         </figure>
         <div
           data-reveal
-          className="absolute -bottom-6 right-4 rotate-[-4deg] rounded-2xl bg-lima px-5 py-3 font-pincel text-2xl text-tinta shadow-lg sm:right-8"
+          className="absolute -bottom-6 right-4 rotate-[-4deg] rounded-2xl bg-amarillo px-5 py-3 font-pincel text-2xl text-tinta shadow-lg sm:right-8"
           style={{ ["--delay" as string]: "700ms" }}
         >
           Tradición familiar
@@ -26,7 +26,7 @@ export default function SobreMi() {
       </div>
 
       <div data-reveal className="order-1 lg:order-2">
-        <p className="font-pincel text-2xl text-azul">Sobre mí</p>
+        <p className="font-pincel text-2xl text-bermellon">Sobre mí</p>
         <h2 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
           Toda una vida entre{" "}
           <span className="pincelada">

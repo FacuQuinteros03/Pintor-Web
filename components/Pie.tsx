@@ -37,11 +37,11 @@ export default function Pie() {
           © {new Date().getFullYear()} {cliente.nombre}
           <br />
           Sitio por{" "}
-          <a href="https://www.linkedin.com/in/facundo-quinteros-125051232" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-azul">
+          <a href="https://www.linkedin.com/in/facundo-quinteros-125051232" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-bermellon">
             Facundo Quinteros
           </a>{" "}
           y{" "}
-          <a href="https://www.linkedin.com/in/lautaro-tomas-lucero-3326b5227" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-azul">
+          <a href="https://www.linkedin.com/in/lautaro-tomas-lucero-3326b5227" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-bermellon">
             Lautaro Lucero
           </a>
         </p>

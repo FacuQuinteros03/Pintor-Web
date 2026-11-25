@@ -38,7 +38,7 @@ export default function Encabezado() {
       {/* barra de progreso de lectura, pintada con los colores del logo */}
       <div
         id="progreso"
-        className="progreso-pincel absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-lima via-turquesa to-azul"
+        className="progreso-pincel absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amarillo via-turquesa to-bermellon"
         aria-hidden="true"
       />
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
@@ -49,7 +49,7 @@ export default function Encabezado() {
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Principal">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium opacity-90 transition hover:opacity-100 hover:text-celeste">
+            <a key={l.href} href={l.href} className="text-sm font-medium opacity-90 transition hover:opacity-100 hover:text-turquesa">
               {l.texto}
             </a>
           ))}

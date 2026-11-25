@@ -40,21 +40,21 @@ export const servicios: Servicio[] = [
     titulo: "Pintura",
     texto: "Interiores, exteriores y frentes de locales. Murales personalizados y revestimientos, siempre con pinturas de calidad.",
     foto: "pinturaServicios",
-    color: "#2bb5a0",
+    color: "#1ba3a8",
   },
   {
     id: "carteleria",
     titulo: "Cartelería y letras",
     texto: "Carteles y letras pintadas a mano para comercios, persianas, paredes, vehículos y contenedores.",
     foto: "cartel",
-    color: "#1f6fd6",
+    color: "#e8462b",
   },
   {
     id: "soldadura",
     titulo: "Soldadura",
     texto: "Reparaciones, piezas a medida y estructuras, con uniones sólidas y duraderas.",
     foto: "soldadorServicios",
-    color: "#f2a541",
+    color: "#f2b630",
   },
   {
     id: "carpinteria",
@@ -68,7 +68,7 @@ export const servicios: Servicio[] = [
     titulo: "Albañilería",
     texto: "Desde pequeñas reparaciones hasta renovaciones y construcciones, en tiempo y forma.",
     foto: "albanilServicios",
-    color: "#8fd16a",
+    color: "#9cbf3b",
   },
 ];
 

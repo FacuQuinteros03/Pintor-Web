@@ -6,7 +6,7 @@ export default function Servicios() {
   return (
     <section id="servicios" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
       <div data-reveal className="max-w-2xl">
-        <p className="font-pincel text-2xl text-azul">Lo que hacemos</p>
+        <p className="font-pincel text-2xl text-bermellon">Lo que hacemos</p>
         <h2 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
           Un solo equipo para{" "}
           <span className="pincelada">

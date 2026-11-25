@@ -48,7 +48,7 @@ export const IconoUbicacion = (p: P) => (
 );
 
 /** Trazo de pincel irregular, usado debajo de palabras destacadas */
-export const Pincelada = ({ color = "var(--color-lima)" }: { color?: string }) => (
+export const Pincelada = ({ color = "var(--color-amarillo)" }: { color?: string }) => (
   <svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true">
     <path
       d="M3 13 C 40 6, 80 15, 120 9 S 180 7, 197 11"

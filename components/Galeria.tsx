@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { categorias, trabajos, type Categoria } from "@/lib/datos";
 import { IconoCerrar, IconoFlecha, Pincelada } from "./iconos";
 
-const coloresRodillo = ["var(--color-turquesa)", "var(--color-azul)", "var(--color-lima)", "var(--color-celeste)"];
+const coloresRodillo = ["var(--color-turquesa)", "var(--color-bermellon)", "var(--color-amarillo)", "var(--color-turquesa)"];
 
 export default function Galeria() {
   const [filtro, setFiltro] = useState<Categoria | "Todos">("Todos");
@@ -44,12 +44,12 @@ export default function Galeria() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div data-reveal className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
-            <p className="font-pincel text-2xl text-azul">Trabajos realizados</p>
+            <p className="font-pincel text-2xl text-bermellon">Trabajos realizados</p>
             <h2 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-5xl">
               Paredes que{" "}
               <span className="pincelada">
                 venden solas
-                <Pincelada color="var(--color-celeste)" />
+                <Pincelada color="var(--color-turquesa)" />
               </span>
             </h2>
             <p className="mt-4 text-lg text-tinta-suave">
@@ -84,7 +84,7 @@ export default function Galeria() {
                 aria-label={`Ver en grande: ${t.titulo}`}
               >
                 <figure
-                  className="rodillo aspect-[4/3] rounded-2xl ring-azul ring-offset-2 ring-offset-pared group-focus-visible:ring-4"
+                  className="rodillo aspect-[4/3] rounded-2xl ring-bermellon ring-offset-2 ring-offset-pared group-focus-visible:ring-4"
                   style={{
                     ["--rodillo" as string]: coloresRodillo[i % coloresRodillo.length],
                     ["--delay" as string]: `${(i % 3) * 120}ms`,
@@ -99,7 +99,7 @@ export default function Galeria() {
                     className="h-full w-full rounded-2xl object-cover transition duration-700 group-hover:scale-105"
                   />
                   <figcaption className="absolute inset-x-0 bottom-0 z-[1] rounded-b-2xl bg-gradient-to-t from-tinta/85 to-transparent p-4 pt-10 text-white">
-                    <span className="block text-xs uppercase tracking-wider text-lima">{t.categoria}</span>
+                    <span className="block text-xs uppercase tracking-wider text-amarillo">{t.categoria}</span>
                     <span className="font-display font-semibold">{t.titulo}</span>
                   </figcaption>
                 </figure>

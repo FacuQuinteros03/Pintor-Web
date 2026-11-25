@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
-/* Paleta sacada del logo de Cristian: pincel azul, trazo verde-turquesa */
+/* Paleta sacada de sus trabajos reales: esmalte negro de cartel, pared hueso,
+   el naranja de la pizzería, el amarillo del taller Anchorena, el turquesa de Los Príncipes
+   y el verde de la verdulería */
 @theme {
-  --color-pared: #f6f3ec;
-  --color-pared-2: #ece7dc;
-  --color-tinta: #0f1b2d;
-  --color-tinta-suave: #44506a;
-  --color-azul: #1f5fd0;
-  --color-celeste: #22b0e6;
-  --color-turquesa: #2bb5a0;
-  --color-lima: #a8e86b;
+  --color-pared: #f5f1e8;
+  --color-pared-2: #ebe4d6;
+  --color-tinta: #1b1916;
+  --color-tinta-suave: #5a554c;
+  --color-bermellon: #e8462b;
+  --color-amarillo: #f2b630;
+  --color-turquesa: #1ba3a8;
+  --color-verde: #9cbf3b;
   --color-whatsapp: #1fa855;
 
   --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
@@ -29,7 +31,7 @@ body {
 }
 
 ::selection {
-  background: var(--color-lima);
+  background: var(--color-amarillo);
   color: var(--color-tinta);
 }
 
@@ -206,8 +208,8 @@ body {
   inset: 0;
   pointer-events: none;
   background:
-    repeating-linear-gradient(90deg, rgb(15 27 45 / 0.018) 0 3px, transparent 3px 11px),
-    linear-gradient(180deg, rgb(255 255 255 / 0.6), transparent 35%, rgb(15 27 45 / 0.03) 70%, transparent);
+    repeating-linear-gradient(90deg, rgb(27 25 22 / 0.018) 0 3px, transparent 3px 11px),
+    linear-gradient(180deg, rgb(255 255 255 / 0.6), transparent 35%, rgb(27 25 22 / 0.03) 70%, transparent);
 }
 
 /* ---------- Muestras de color: la pintura baja y llena la muestra ---------- */

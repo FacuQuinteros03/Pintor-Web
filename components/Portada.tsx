@@ -4,17 +4,17 @@ import { IconoUbicacion, IconoWhatsapp, Pincelada } from "./iconos";
 
 // Gotas en los colores del logo que flotan alrededor de la foto
 const gotas = [
-  { c: "var(--color-lima)", x: "-6%", y: "8%", s: 34, d: "0s" },
-  { c: "var(--color-celeste)", x: "92%", y: "18%", s: 24, d: "1.2s" },
+  { c: "var(--color-amarillo)", x: "-6%", y: "8%", s: 34, d: "0s" },
+  { c: "var(--color-turquesa)", x: "92%", y: "18%", s: 24, d: "1.2s" },
   { c: "var(--color-turquesa)", x: "88%", y: "82%", s: 40, d: "2.1s" },
-  { c: "var(--color-azul)", x: "-4%", y: "70%", s: 20, d: "0.6s" },
+  { c: "var(--color-bermellon)", x: "-4%", y: "70%", s: 20, d: "0.6s" },
 ];
 
 export default function Portada() {
   return (
     <section id="inicio" className="relative isolate overflow-hidden bg-tinta pb-28 pt-28 text-white sm:pt-32 lg:pb-36">
       <Image
-        src="/fotos/fondoservicios.webp"
+        src="/fotos/paredArmus.webp"
         alt=""
         fill
         priority
@@ -26,18 +26,18 @@ export default function Portada() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <p data-reveal className="visible mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-sm text-white/80">
-            <IconoUbicacion className="h-4 w-4 text-lima" /> {cliente.oficio} en {cliente.zona}
+            <IconoUbicacion className="h-4 w-4 text-amarillo" /> {cliente.oficio} en {cliente.zona}
           </p>
 
           <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-            <span className="letras-a-mano block font-pincel text-6xl font-normal text-lima sm:text-8xl">
+            <span className="letras-a-mano block font-pincel text-6xl font-normal text-amarillo sm:text-8xl">
               {cliente.nombre}
             </span>
             <span className="mt-2 block">
               Pintor{" "}
               <span className="pincelada">
                 profesional
-                <Pincelada color="var(--color-azul)" />
+                <Pincelada color="var(--color-bermellon)" />
               </span>
             </span>
           </h1>
@@ -91,7 +91,7 @@ export default function Portada() {
               <path d="M12 0C12 0 0 14 0 21a12 12 0 0 0 24 0C24 14 12 0 12 0z" fill={g.c} />
             </svg>
           ))}
-          <figure className="rodillo rotate-2 rounded-3xl shadow-2xl shadow-black/50" style={{ ["--rodillo" as string]: "var(--color-lima)" }}>
+          <figure className="rodillo rotate-2 rounded-3xl shadow-2xl shadow-black/50" style={{ ["--rodillo" as string]: "var(--color-amarillo)" }}>
             <Image
               src="/fotos/pintando.webp"
               alt="Cristian delineando letras gigantes sobre la pared de Armus CrossFit"
@@ -104,7 +104,7 @@ export default function Portada() {
           </figure>
           <figure
             className="rodillo absolute -bottom-10 -left-8 w-1/2 -rotate-3 rounded-2xl border-4 border-tinta shadow-xl sm:-left-14"
-            style={{ ["--rodillo" as string]: "var(--color-celeste)", ["--delay" as string]: "350ms" }}
+            style={{ ["--rodillo" as string]: "var(--color-turquesa)", ["--delay" as string]: "350ms" }}
           >
             <Image
               src="/fotos/pizzeria-sm.webp"

@@ -3,9 +3,9 @@ import { IconoFacebook, IconoInstagram, IconoUbicacion, IconoWhatsapp } from "./
 
 // Colores tomados de sus trabajos reales: pizzería Los 3 Nietos, taller Anchorena, cartel Los Príncipes
 const pasos = [
-  { n: "01", color: "#e8462b", nombre: "Naranja pizzería", titulo: "Escribinos", texto: "Contanos por WhatsApp qué necesitás y, si podés, mandá una foto del lugar." },
-  { n: "02", color: "#f2b630", nombre: "Amarillo taller", titulo: "Presupuesto sin cargo", texto: "Te pasamos el presupuesto sin costo." },
-  { n: "03", color: "#1ba3a8", nombre: "Turquesa cartel", titulo: "Manos a la obra", texto: "Coordinamos el día y nos ponemos a pintar." },
+  { n: "01", color: "var(--color-bermellon)", nombre: "Naranja pizzería", titulo: "Escribinos", texto: "Contanos por WhatsApp qué necesitás y, si podés, mandá una foto del lugar." },
+  { n: "02", color: "var(--color-amarillo)", nombre: "Amarillo taller", titulo: "Presupuesto sin cargo", texto: "Te pasamos el presupuesto sin costo." },
+  { n: "03", color: "var(--color-turquesa)", nombre: "Turquesa cartel", titulo: "Manos a la obra", texto: "Coordinamos el día y nos ponemos a pintar." },
 ];
 
 /** Cinta de pintor pegando el cartel a la pared */
@@ -24,14 +24,14 @@ export default function Contacto() {
         <div data-reveal className="relative">
           <Cinta className="-left-3 -top-3 -rotate-12" />
           <Cinta className="-right-3 -top-3 rotate-12" />
-          <div className="cartel-pintado relative -rotate-1 bg-[#fbf6e9] p-3 shadow-[0_18px_40px_-18px_rgb(15_27_45/0.45)]">
+          <div className="cartel-pintado relative -rotate-1 bg-[#fbf6e9] p-3 shadow-[0_18px_40px_-18px_rgb(27_25_22/0.45)]">
             <div className="border-[3px] border-tinta p-1.5">
               <div className="border border-tinta px-6 py-10 text-center sm:px-10 sm:py-12">
-                <p className="font-pincel text-3xl text-[#e8462b] sm:text-4xl">¿Arrancamos con tu proyecto?</p>
+                <p className="font-pincel text-3xl text-[var(--color-bermellon)] sm:text-4xl">¿Arrancamos con tu proyecto?</p>
                 <h2 className="mt-2 font-display text-4xl font-extrabold uppercase leading-none tracking-tight text-tinta sm:text-6xl">
                   Pedí tu presupuesto
                 </h2>
-                <p className="mt-3 inline-block -rotate-2 bg-[#f2b630] px-4 py-1 font-display text-lg font-extrabold uppercase tracking-wide text-tinta">
+                <p className="mt-3 inline-block -rotate-2 bg-[var(--color-amarillo)] px-4 py-1 font-display text-lg font-extrabold uppercase tracking-wide text-tinta">
                   sin cargo
                 </p>
 
@@ -51,10 +51,10 @@ export default function Contacto() {
                 <div className="mx-auto mt-8 h-px w-2/3 bg-tinta/20" aria-hidden="true" />
 
                 <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-tinta">
-                  <a href={cliente.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium hover:text-[#e8462b]">
+                  <a href={cliente.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium hover:text-[var(--color-bermellon)]">
                     <IconoInstagram className="h-5 w-5" /> {cliente.instagramUsuario}
                   </a>
-                  <a href={cliente.facebook} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium hover:text-[#e8462b]">
+                  <a href={cliente.facebook} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-medium hover:text-[var(--color-bermellon)]">
                     <IconoFacebook className="h-5 w-5" /> Facebook
                   </a>
                   <span className="inline-flex items-center gap-2 font-medium">
@@ -68,14 +68,14 @@ export default function Contacto() {
 
         {/* Los pasos como muestras de color de pinturería */}
         <div>
-          <p data-reveal className="font-pincel text-2xl text-[#e8462b]">Cómo trabajamos</p>
+          <p data-reveal className="font-pincel text-2xl text-[var(--color-bermellon)]">Cómo trabajamos</p>
           <ol className="mt-4 space-y-5">
             {pasos.map((p, i) => (
               <li
                 key={p.n}
                 data-reveal
                 style={{ ["--delay" as string]: `${150 + i * 140}ms`, rotate: `${[-1.2, 0.8, -0.5][i]}deg` }}
-                className="muestra flex overflow-hidden rounded-md bg-white shadow-[0_10px_24px_-14px_rgb(15_27_45/0.5)]"
+                className="muestra flex overflow-hidden rounded-md bg-white shadow-[0_10px_24px_-14px_rgb(27_25_22/0.5)]"
               >
                 <div className="muestra-color relative flex w-24 shrink-0 flex-col justify-between p-3 sm:w-28" style={{ background: p.color }}>
                   <span className="font-display text-2xl font-extrabold text-white/95">{p.n}</span>

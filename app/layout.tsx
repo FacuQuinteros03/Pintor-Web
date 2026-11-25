@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.png", apple: "/icon.png" },
 };
 
-export const viewport: Viewport = { themeColor: "#0f1b2d" };
+export const viewport: Viewport = { themeColor: "#1b1916" };
 
 // Datos estructurados para que Google lo muestre como negocio local
 const jsonLd = {
