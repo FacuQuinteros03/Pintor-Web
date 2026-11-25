@@ -10,10 +10,12 @@ Sitio web profesional para **Cristian Zaragoza**, pintor y cartelista de Rosario
 |---|---|---|
 | ![Servicios](docs/servicios.png) | ![Galería de trabajos](docs/galeria.png) | ![Vista en celular](docs/celular.png) |
 
+![Contacto con estilo de cartel pintado a mano](docs/contacto.png)
+
 ## Qué tiene
 
 - **Galería de trabajos** con filtros por tipo (frentes, murales, vehículos) y visor a pantalla completa con teclado y gesto de deslizar en el celular.
-- **Contacto por WhatsApp** en un toque: botón flotante, mensaje precargado y consultas por servicio.
+- **Contacto por WhatsApp** en un toque: botón flotante, mensaje precargado y consultas por servicio. La sección de contacto es un cartel pintado a mano, como los que hace Cristian, con los pasos como muestras de color sacadas de sus trabajos.
 - **Animaciones con temática de pintura:** el nombre se "pinta" a pincel, los títulos se subrayan con una pincelada, las fotos aparecen como una pasada de rodillo, gotas de pintura flotando, chorreado entre secciones y tarjetas que se llenan de color. Todas respetan `prefers-reduced-motion`.
 - **SEO local:** metadatos en español (es-AR), Open Graph para compartir, datos estructurados `HousePainter` (schema.org), `sitemap.xml` y `robots.txt`.
 - **Rápido:** exportación 100 % estática, fotos en WebP (de 53 MB a menos de 3 MB) y fuentes autoalojadas con `next/font`.

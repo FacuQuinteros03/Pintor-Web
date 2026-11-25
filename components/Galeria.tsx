@@ -74,9 +74,9 @@ export default function Galeria() {
           </div>
         </div>
 
-        <ul key={filtro} className="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3">
+        <ul key={filtro} className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {visibles.map((t, i) => (
-            <li key={t.foto} className="mb-4 break-inside-avoid">
+            <li key={t.foto}>
               <button
                 type="button"
                 onClick={() => setAbierta(i)}
@@ -84,7 +84,7 @@ export default function Galeria() {
                 aria-label={`Ver en grande: ${t.titulo}`}
               >
                 <figure
-                  className="rodillo rounded-2xl ring-azul ring-offset-2 ring-offset-pared group-focus-visible:ring-4"
+                  className="rodillo aspect-[4/3] rounded-2xl ring-azul ring-offset-2 ring-offset-pared group-focus-visible:ring-4"
                   style={{
                     ["--rodillo" as string]: coloresRodillo[i % coloresRodillo.length],
                     ["--delay" as string]: `${(i % 3) * 120}ms`,
@@ -96,7 +96,7 @@ export default function Galeria() {
                     width={t.ancho}
                     height={t.alto}
                     sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
-                    className="h-auto w-full rounded-2xl"
+                    className="h-full w-full rounded-2xl object-cover transition duration-700 group-hover:scale-105"
                   />
                   <figcaption className="absolute inset-x-0 bottom-0 z-[1] rounded-b-2xl bg-gradient-to-t from-tinta/85 to-transparent p-4 pt-10 text-white">
                     <span className="block text-xs uppercase tracking-wider text-lima">{t.categoria}</span>

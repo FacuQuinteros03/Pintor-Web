@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es-AR" className={`${bricolage.variable} ${inter.variable} ${caveat.variable}`}>
       <body className="font-sans">
         <noscript>
-          <style>{`[data-reveal]{opacity:1;transform:none}.rodillo::after{display:none}.rodillo img{transform:none}`}</style>
+          <style>{`[data-reveal]{opacity:1;transform:none}.rodillo::after{display:none}.rodillo img{transform:none}.cartel-pintado,.muestra-color{clip-path:none!important}`}</style>
         </noscript>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
